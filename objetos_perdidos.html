@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <title>Objetos perdidos | $nome do site$</title>
+    <link rel="icon" type="image/png" href="Ferramenta-Lupa-PNG-removebg-preview.png"/>
+</head>
+<style>
+    body{
+        background: linear-gradient(#8ee5e6, #2382A1);  
+  background-attachment: fixed;   
+    }
+    a{
+        color:#25bcf1;
+    }
+    a:link{
+        color:b#25bcf1;
+    }
+     
+
+    .conteudo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+
+    }
+    .fundo-div{
+        background-image:url("");
+        opacity: 1.0;
+        position: fixed ; 
+     
+	      
+        background-color:transparent;
+        width: 550px;
+        height: 350px;
+        align-items: center;
+        margin: 50px;
+        margin-top: -380px;
+        margin-left: 210px;
+        margin-right: 210px;
+        padding-bottom: 40px;
+        border-radius: 2%;
+        margin-bottom: 25px;
+        border: 4px transparent;
+    }
+    .fundo-div2{
+        background-image:url("");
+        text-align: center;
+        width: 700px;
+        height: 500px;
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin: -300px;
+        margin-top: 20px;
+        border-radius: 2%;
+        margin-bottom: 25px;
+        overflow: hidden;
+        line-height: 1.5;
+        float: right;
+    }
+    .bg-img{
+        background-image:url("");
+        opacity: 1.0;
+        width: 643px;
+        height: 330px;
+       
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+    input[type=text],input[type=password],input[type=email],select{
+        border:  52px;
+        width: 321px;
+        height: 53px;
+        background-color: #f5fcfc;
+        
+    }
+    h1{
+        margin-top: 1px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: Roboto;
+        font-weight: bold;
+    }
+    .inside-div{
+        margin: 50px;
+    }
+    .login-btn{
+        background-color: #4DC6E2;
+        transition: 0.5s;
+        border-radius: 3px;
+        color: white;
+        border:none;
+        height: 45px;
+        width: 150px;
+        font-size: 1.15em;
+        font-weight: bold;
+    }.login-btn:hover{
+        background-color: #2382A1;
+        transition: 0.5s;
+    }
+    .grid{
+        background-color: #e0ffff;
+        width: 20%;
+        margin-top: 10px; 
+        margin-right: 20px; 
+        height: auto;
+        padding-bottom: 15px;
+        display: inline-block;
+    }
+    .grid>.imagem{
+        max-width: 180px;
+        max-height: 180px;
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .grid>.titulo{
+        font-weight: bold;
+        font-size: 2em;
+    }*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+
+section {
+  position: relative;
+  left: 100px;
+}
+
+
+
+
+body {
+  padding: 100px 0;
+	background: tranparent;
+  color: white;
+  max-width:640px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+  line-height:1.4;
+  
+}
+
+nav {
+  float: left;
+	position: relative;
+	top: 0;
+  left: 0;
+	background: transparent;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav ul li {
+	position: relative;
+  width: 70px;height: 110px;
+  cursor: pointer;
+  
+	background: transparent;
+  display: flex; 
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+  left: 5px;
+
+}
+
+nav ul li:after {
+	position: absolute;
+	background: #8ee5e6;
+	color:#2382A1;
+	top:0;
+	left: 70px;
+	width: 150px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after { 
+	content: "Pagina Inicial";
+	line-height: 88px;
+}
+nav ul li:nth-child(2):after { 
+	content: "Pesquisar Objeto";
+	line-height: 88px;
+}
+nav ul li:nth-child(3):after { 
+	content: "Quem Somos";
+	line-height: 85px;
+}
+nav ul li:nth-child(4):after { 
+	content: "Como Funciona";
+	line-height: 70px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+.roof {
+	width: 0;
+	height: 0;
+	top:2px;
+	border-style: solid;
+	border-width: 0 21px 15px 21px;
+	border-color: transparent transparent #ffffff transparent;
+}
+
+.roof-edge {
+   
+	position: absolute;
+	z-index: 20;
+	left: -17px;
+	top: 3px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 17px 12px 17px;
+	
+}
+ #cabecalho{
+                              color: #25bcf1;
+                              
+                              font-size: 50px;
+                              font-family: serif;
+                              position: absolute;
+                              top: 15px;
+                              right: 10px;
+                              width: 100px;
+	                            height: 29px;	
+                              border-radius: 10px;								
+                            }
+
+/*//mail //*/
+
+</style>
+<body>
+   <nav>
+        <ul>
+          <li>
+              
+            <div class="home-icon">
+            <a>
+                <img src="casa.png" alt="" width="35" height="35">
+            </a>
+              
+              </div>
+              <div class="front"></div>
+              
+            </div>
+          </li>
+          <li>
+            <div class="about-icon">
+                <a>
+                    <img src="Ferramenta-Lupa-PNG-removebg-preview.png" alt="" width="35" height="35">
+                </a>
+             
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="work-icon">
+                <a>
+                    <img src="assistencia-social.png" alt="" width="35" height="35">
+                </a>
+              
+            </div>
+          </li>
+          <li>
+            <div class="mail-icon">
+                <a>
+                    <img src="suporte-tecnico.png" alt="" width="35" height="35">
+                </a>
+             
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+      <section>
+        
+      </section>
+    <div>
+        
+    </div>
+    <div class="fundo-div2">
+      <form  class="form" action="" method="post">
+          <br>
+          <img src="Encontre.png" alt="some text" width=320 height=220><br>
+           <a>
+            Sistema de Achados e Perdidos para Região Central do Rio de Janeiro
+
+           </a> <br>
+          <br>
+                         
+      </form>
+      
+  </div>
+    <div id="cabecalho">
+      
+      <button  li class="btn btn-primary" type="submit" >
+      <a href="index.html">
+        Entrar
+      </a>
+    </button>
+  </div>
+    
+    <div class="bg-img"></div>
+    <div class="fundo-div">
+        
+        
+        
+            </div>
+        <!--<h1>Objetos encontrados</h1>
+        <div class="grid">
+            <img src="livro2.jpg" alt="" class="imagem">
+            <div class="titulo">Livro Perdido</div>
+            <button class="login-btn">Saber mais</button>
+        </div>
+        <div class="grid">
+            <img src="chaves.jpg" alt="" class="imagem">
+            <div class="titulo">Chaves de casa</div>
+            <button class="login-btn">Saber mais</button>
+        </div>
+        <div class="grid">
+            <img src="rg2.jpg" alt="" class="imagem">
+            <div class="titulo">Documentos</div>
+            <button class="login-btn">Saber mais</button>
+        </div>
+        <div class="grid">
+            <img src="fones.jpg" alt="" class="imagem">
+            <div class="titulo">Fones de ouvido</div>
+            <button class="login-btn">Saber mais</button> -->
+        </div>
+        
+    </div>
+    <label for="story"></label>
+
+
+
+    
+</body>
+</html> 

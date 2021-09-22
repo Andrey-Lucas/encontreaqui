@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Informações</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!-- Styles -->
+<style>
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+</style>
+<style>
+    body{
+        background-color: #8ee5e6;
+        font-family: Roboto, sans-serif;
+    }
+    a:link{
+        color:blueviolet;
+    }
+    .bg-img{
+        background-image:url("solidariedade2.jpg");
+        width: 643px;
+        height: 330px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+   
+    .conteudo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+
+    }
+    .fundo-div{
+        background-color: #ccf3f3;
+        width:90%;
+        height: 1000px;
+        text-align: center;
+        margin: auto;
+        border-radius: 2%;
+        margin-bottom: 40px;
+    }
+    input[type=text],input[type=password]{
+        border:none;
+        width: 321px;
+        height: 25px;
+        background-color: #f5fcfc;
+        
+    }
+    h1{
+        color: white;
+        text-align: center;
+        font-family: Roboto;
+        font-weight: bold;
+    }
+    .inside-div{
+        margin: 5px;
+    }
+    .login-btn{
+        background-color: #4DC6E2;
+        transition: 0.5s;
+        border-radius: 3px;
+        color: white;
+        border:none;
+        height: 25px;
+        width: 50px;
+    }.login-btn:hover{
+        background-color: #2382A1;
+        transition: 0.5s;
+    }
+    .tituloConteudo{
+        font-size: 40px;
+    }
+    .tabelaRelatorio{
+        background-color: rgb(83, 175, 206);
+        margin: auto;
+        border-radius: 25px;
+        color: white;
+        width: 90%;
+        border-collapse: collapse;
+    }
+    .tabelaRelatorio td,th{
+        border: 1px solid black;
+    }
+    .tabelaRelatorio td{
+        padding: 2px;
+    }
+    /* .tabelaRelatorio tr:nth-child(even){
+        background-color: rgb(77, 160, 185);
+    } */
+    .tabelaRelatorio th{
+        background-color:#4093ca ;
+        color:white;
+        font-size: 18px;
+        padding: 5px !important;
+    }
+    .escondido{
+        display: none;
+        margin:auto;
+    }
+    .flex{
+        display: inline-flex;
+    }
+</style>
+
+<div class="bg-img"></div>
+<div class="fundo-div">
+    <div class="tituloConteudo">Dashboard de Informações </div>
+   	<div class='tableauPlaceholder' id='viz1626312725325' 
+       style='position: relative'><noscript><a href='#'>
+           <img alt='DASHBOARD ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;EncontreAqui2&#47;DASHBOARD&#47;1_rss.png' style='border: none' />
+        </a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' />
+             <param name='site_root' value='' /><param name='name' value='EncontreAqui2&#47;DASHBOARD' />
+             <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+             <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;EncontreAqui2&#47;DASHBOARD&#47;1.png' /> 
+             <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+             <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+             <param name='display_count' value='yes' /><param name='language' value='pt-BR' />
+             <param name='filter' value='publish=yes' /></object></div>               
+              <script type='text/javascript'>                   
+               var divElement = document.getElementById('viz1626312725325');                    
+               var vizElement = divElement.getElementsByTagName('object')[0];                    
+               vizElement.style.width='750px';vizElement.style.height='987px';                   
+                var scriptElement = document.createElement('script');                    
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                   
+                 vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                  </script>
+
+
+
+       </div>
+    </div>
+</div>
+</body>
+</html>
